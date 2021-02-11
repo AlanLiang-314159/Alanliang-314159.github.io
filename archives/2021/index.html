@@ -25,12 +25,12 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"alanliang-314159.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="test">
+<meta name="description" content="Stay Hungry, Stay Foolish">
 <meta property="og:type" content="website">
-<meta property="og:title" content="衛道中學資訊研究社">
+<meta property="og:title" content="Alan&#39;s note">
 <meta property="og:url" content="https://alanliang-314159.github.io/archives/2021/index.html">
-<meta property="og:site_name" content="衛道中學資訊研究社">
-<meta property="og:description" content="test">
+<meta property="og:site_name" content="Alan&#39;s note">
+<meta property="og:description" content="Stay Hungry, Stay Foolish">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:author" content="Alan Liang">
 <meta name="twitter:card" content="summary">
@@ -48,8 +48,24 @@
     lang   : 'zh-TW'
   };
 </script>
-<title>歸檔 | 衛道中學資訊研究社</title>
+<title>歸檔 | Alan's note</title>
   
+    <script>
+      function sendPageView() {
+        if (CONFIG.hostname !== location.hostname) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'G-C5PV6B7H2H',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
 
 
 
@@ -89,7 +105,7 @@
   </style>
 </noscript>
 
-<link rel="alternate" href="/atom.xml" title="衛道中學資訊研究社" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="Alan's note" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -110,10 +126,10 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">衛道中學資訊研究社</h1>
+      <h1 class="site-title">Alan's note</h1>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">VIRC club</p>
+      <p class="site-subtitle" itemprop="description">分享學習筆記的地方</p>
   </div>
 
   <div class="site-nav-right">
@@ -196,16 +212,28 @@
     <img class="site-author-image" itemprop="image" alt="Alan Liang"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">Alan Liang</p>
-  <div class="site-description" itemprop="description">test</div>
+  <div class="site-description" itemprop="description">Stay Hungry, Stay Foolish</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">文章</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
 </div>
@@ -247,7 +275,7 @@
   <div class="post-block">
     <div class="post-content">
       <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共有 2 篇文章。 繼續努力。</span>
+        <span class="collection-header">嗯..! 目前共有 1 篇文章。 繼續努力。</span>
       </div>
 
       
@@ -259,35 +287,15 @@
     <header class="post-header">
       <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2021-02-06T11:58:00+08:00"
-              content="2021-02-06">
-          02-06
+              datetime="2021-02-09T11:50:04+08:00"
+              content="2021-02-09">
+          02-09
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2021/02/06/hello-world/" itemprop="url">
+          <a class="post-title-link" href="/hello/" itemprop="url">
             <span itemprop="name">你好</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-02-06T11:56:00+08:00"
-              content="2021-02-06">
-          02-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/02/06/Untitled/" itemprop="url">
-            <span itemprop="name">Untitled</span>
           </a>
       </div>
 
